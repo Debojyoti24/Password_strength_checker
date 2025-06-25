@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Strength Checker</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="header-left">
+        <h1>Password Strength Checker</h1>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <h2>Check Your Password Strength</h2>
+        <div class="input-group">
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+          />
+          <button id="togglePassword" aria-label="Toggle password visibility">
+            <i class="fas fa-eye"></i>
+          </button>
+        </div>
+        <div id="strength-meter">
+          <div id="strength-bar"></div>
+        </div>
+        <p id="strength-text">Enter a password to check its strength.</p>
+        <ul id="criteria">
+          <li id="length">At least 8 characters</li>
+          <li id="uppercase">Contains uppercase letter</li>
+          <li id="lowercase">Contains lowercase letter</li>
+          <li id="number">Contains number</li>
+          <li id="special">Contains special character</li>
+        </ul>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
