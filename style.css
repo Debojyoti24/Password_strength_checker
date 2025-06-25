@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #adeed9;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #2c3e50;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-left h1 {
+  font-size: 24px;
+}
+
+.header-right p {
+  font-size: 14px;
+  font-style: italic;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px);
+  padding: 20px;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.container h2 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#password {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+#password:focus {
+  border-color: #3498db;
+}
+
+#togglePassword {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+#togglePassword:hover {
+  background-color: #2980b9;
+}
+
+#togglePassword i {
+  font-size: 18px;
+}
+
+#strength-meter {
+  height: 10px;
+  background-color: #eee;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+#strength-bar {
+  height: 100%;
+  width: 0;
+  transition: width 0.3s, background-color 0.3s;
+}
+
+#strength-text {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+#criteria {
+  list-style: none;
+  text-align: left;
+}
+
+#criteria li {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #e74c3c;
+}
+
+#criteria li.valid {
+  color: #2ecc71;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+  .header-right p {
+    margin-top: 10px;
+  }
+  .container {
+    padding: 20px;
+  }
+  #togglePassword {
+    width: 36px;
+    height: 36px;
+  }
+}
