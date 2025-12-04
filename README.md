@@ -80,10 +80,9 @@ This project is licensed under the [MIT License](LICENSE) - see the `LICENSE` fi
 
 ## 📬 Contact
 
-If you have any questions or suggestions, feel free to contact me at [your-email@example.com](mailto:your-email@example.com).
+If you have any questions or suggestions, feel free to contact me .
 
 ## 💖 Thanks Message
 
 Thank you for checking out this project! I hope you find it useful. Your feedback and contributions are highly appreciated. 🙏
 
-This README is written by [readme.ai](https://readme-generator-phi.vercel.app/).
